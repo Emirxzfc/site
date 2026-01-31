@@ -12,7 +12,7 @@
    * A different format will require also updating the theme in tailwind.config.ts.
   */
   :root {
-    /* Luxury Dark Theme */
+    /* Luxury Dark Theme (Default) */
     --background: 240 10% 3.9%;
     --foreground: 210 40% 98%;
 
@@ -58,6 +58,46 @@
     --neon-purple: 280 100% 50%;
     --neon-lime: 90 100% 50%;
     --neon-pink: 330 100% 50%;
+  }
+
+  /* Light Mode */
+  :not(.dark) {
+    --background: 210 30% 97%;
+    --foreground: 240 10% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 10%;
+
+    --primary: 280 100% 50%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 180 100% 50%;
+    --secondary-foreground: 240 10% 3.9%;
+
+    --muted: 210 30% 90%;
+    --muted-foreground: 240 10% 40%;
+
+    --accent: 280 100% 50%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 210 30% 88%;
+    --input: 210 30% 92%;
+    --ring: 280 100% 50%;
+
+    --sidebar-background: 210 30% 95%;
+    --sidebar-foreground: 240 10% 20%;
+    --sidebar-primary: 280 100% 50%;
+    --sidebar-primary-foreground: 210 40% 98%;
+    --sidebar-accent: 180 100% 50%;
+    --sidebar-accent-foreground: 240 10% 3.9%;
+    --sidebar-border: 210 30% 88%;
+    --sidebar-ring: 280 100% 50%;
   }
 
   .dark {
