@@ -29,7 +29,7 @@ export default function Projects() {
                   <div className="text-center">
                     <p className="text-foreground/60 mb-2">Project {i}</p>
                     <p className="text-sm text-foreground/40">
-                      Coming soon
+                      {t("projectsPage.comingSoon")}
                     </p>
                   </div>
                 </div>
@@ -46,7 +46,7 @@ export default function Projects() {
               to="/"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-gradient-to-r from-neon-cyan to-neon-magenta text-background font-semibold hover:shadow-glow-cyan transition-all"
             >
-              Back to Home
+              {t("projectsPage.backToHome")}
               <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
