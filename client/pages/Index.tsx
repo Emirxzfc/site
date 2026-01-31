@@ -111,7 +111,7 @@ export default function Index() {
                   <Icon className={`w-12 h-12 ${skill.iconColor} mb-4`} />
                   <h3 className="text-xl font-bold mb-2">{skill.label}</h3>
                   <p className="text-foreground/60 text-sm">
-                    Expertise in building modern, scalable solutions
+                    {t("skills.description")}
                   </p>
                 </div>
               );
