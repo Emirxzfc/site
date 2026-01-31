@@ -12,7 +12,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div>
             <h3 className="text-sm font-semibold text-neon-cyan mb-4">
-              Quick Links
+              {t("footer.quickLinks")}
             </h3>
             <ul className="space-y-2">
               <li>
@@ -20,7 +20,7 @@ export default function Footer() {
                   to="/"
                   className="text-foreground/60 hover:text-neon-cyan transition-colors text-sm"
                 >
-                  Home
+                  {t("common.home")}
                 </Link>
               </li>
               <li>
@@ -28,7 +28,7 @@ export default function Footer() {
                   to="/about"
                   className="text-foreground/60 hover:text-neon-cyan transition-colors text-sm"
                 >
-                  About
+                  {t("common.about")}
                 </Link>
               </li>
               <li>
@@ -36,7 +36,7 @@ export default function Footer() {
                   to="/projects"
                   className="text-foreground/60 hover:text-neon-cyan transition-colors text-sm"
                 >
-                  Projects
+                  {t("common.projects")}
                 </Link>
               </li>
             </ul>
@@ -44,7 +44,7 @@ export default function Footer() {
 
           <div>
             <h3 className="text-sm font-semibold text-neon-magenta mb-4">
-              Services
+              {t("footer.services")}
             </h3>
             <ul className="space-y-2">
               <li>
@@ -52,7 +52,7 @@ export default function Footer() {
                   href="#"
                   className="text-foreground/60 hover:text-neon-magenta transition-colors text-sm"
                 >
-                  Web Development
+                  {t("footer.webDev")}
                 </a>
               </li>
               <li>
@@ -60,7 +60,7 @@ export default function Footer() {
                   href="#"
                   className="text-foreground/60 hover:text-neon-magenta transition-colors text-sm"
                 >
-                  UI/UX Design
+                  {t("footer.uidesign")}
                 </a>
               </li>
               <li>
@@ -68,7 +68,7 @@ export default function Footer() {
                   href="#"
                   className="text-foreground/60 hover:text-neon-magenta transition-colors text-sm"
                 >
-                  Consulting
+                  {t("footer.consulting")}
                 </a>
               </li>
             </ul>
@@ -76,7 +76,7 @@ export default function Footer() {
 
           <div>
             <h3 className="text-sm font-semibold text-neon-purple mb-4">
-              Resources
+              {t("footer.resources")}
             </h3>
             <ul className="space-y-2">
               <li>
@@ -84,7 +84,7 @@ export default function Footer() {
                   href="#"
                   className="text-foreground/60 hover:text-neon-purple transition-colors text-sm"
                 >
-                  Blog
+                  {t("footer.blog")}
                 </a>
               </li>
               <li>
@@ -92,7 +92,7 @@ export default function Footer() {
                   href="#"
                   className="text-foreground/60 hover:text-neon-purple transition-colors text-sm"
                 >
-                  Documentation
+                  {t("footer.documentation")}
                 </a>
               </li>
               <li>
@@ -100,7 +100,7 @@ export default function Footer() {
                   href="#"
                   className="text-foreground/60 hover:text-neon-purple transition-colors text-sm"
                 >
-                  Resume
+                  {t("footer.resume")}
                 </a>
               </li>
             </ul>
@@ -108,7 +108,7 @@ export default function Footer() {
 
           <div>
             <h3 className="text-sm font-semibold text-neon-cyan mb-4">
-              Connect
+              {t("footer.connect")}
             </h3>
             <div className="flex gap-3">
               <a
