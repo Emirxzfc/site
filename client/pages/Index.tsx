@@ -105,7 +105,7 @@ export default function Index() {
                   key={index}
                   className={`p-8 rounded-xl border ${skill.borderColor} ${skill.bgColor} hover:border-neon-cyan/60 transition-all duration-300 group cursor-pointer transform hover:scale-105`}
                 >
-                  <Icon className={`w-12 h-12 text-neon-${skill.color} mb-4`} />
+                  <Icon className={`w-12 h-12 ${skill.iconColor} mb-4`} />
                   <h3 className="text-xl font-bold mb-2">{skill.label}</h3>
                   <p className="text-foreground/60 text-sm">
                     Expertise in building modern, scalable solutions
