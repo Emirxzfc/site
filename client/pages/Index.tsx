@@ -124,12 +124,12 @@ export default function Index() {
       <section className="py-20 px-4">
         <div className="container mx-auto">
           <div className="flex items-center justify-between mb-12">
-            <h2 className="text-4xl font-bold">Featured Projects</h2>
+            <h2 className="text-4xl font-bold">{t("projects.title")}</h2>
             <Link
               to="/projects"
               className="text-neon-cyan hover:text-neon-magenta transition-colors flex items-center gap-2 font-semibold"
             >
-              View All
+              {t("projects.viewAll")}
               <ArrowRight className="w-5 h-5" />
             </Link>
           </div>
