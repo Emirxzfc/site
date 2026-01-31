@@ -5,10 +5,12 @@ import Footer from "@/components/Footer";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function Index() {
+  const { t } = useLanguage();
+
   const skills = [
-    { icon: Code, label: "Full Stack Development", iconColor: "text-neon-cyan", bgColor: "bg-neon-cyan/10", borderColor: "border-neon-cyan/30" },
-    { icon: Palette, label: "UI/UX Design", iconColor: "text-neon-magenta", bgColor: "bg-neon-magenta/10", borderColor: "border-neon-magenta/30" },
-    { icon: Zap, label: "Performance", iconColor: "text-neon-purple", bgColor: "bg-neon-purple/10", borderColor: "border-neon-purple/30" },
+    { icon: Code, label: t("skills.fullStack"), iconColor: "text-neon-cyan", bgColor: "bg-neon-cyan/10", borderColor: "border-neon-cyan/30" },
+    { icon: Palette, label: t("skills.uiux"), iconColor: "text-neon-magenta", bgColor: "bg-neon-magenta/10", borderColor: "border-neon-magenta/30" },
+    { icon: Zap, label: t("skills.performance"), iconColor: "text-neon-purple", bgColor: "bg-neon-purple/10", borderColor: "border-neon-purple/30" },
   ];
 
   const projects = [
