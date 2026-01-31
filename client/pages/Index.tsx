@@ -15,20 +15,20 @@ export default function Index() {
 
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "Modern e-commerce platform with real-time inventory management and seamless checkout experience.",
+      title: t("projects.ecommerce"),
+      description: t("projects.ecommerceDesc"),
       tech: ["React", "Node.js", "MongoDB"],
       gradient: "from-neon-cyan to-neon-magenta",
     },
     {
-      title: "AI-Powered Analytics",
-      description: "Advanced analytics dashboard with machine learning insights and predictive analytics.",
+      title: t("projects.analytics"),
+      description: t("projects.analyticsDesc"),
       tech: ["React", "Python", "TensorFlow"],
       gradient: "from-neon-magenta to-neon-purple",
     },
     {
-      title: "Real-Time Collaboration Tool",
-      description: "Live collaboration platform for teams with real-time code editing and video chat.",
+      title: t("projects.collaboration"),
+      description: t("projects.collaborationDesc"),
       tech: ["React", "WebSocket", "Firebase"],
       gradient: "from-neon-purple to-neon-cyan",
     },
