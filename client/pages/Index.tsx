@@ -52,21 +52,21 @@ export default function Index() {
             {/* Badge */}
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-neon-cyan/30 bg-neon-cyan/5 mb-6">
               <Sparkles className="w-4 h-4 text-neon-cyan" />
-              <span className="text-sm text-neon-cyan font-medium">Welcome to my portfolio</span>
+              <span className="text-sm text-neon-cyan font-medium">{t("hero.welcome")}</span>
             </div>
 
             {/* Main Heading */}
             <h1 className="text-5xl md:text-7xl font-black mb-6 leading-tight">
               <span className="bg-gradient-to-r from-neon-cyan via-neon-magenta to-neon-purple bg-clip-text text-transparent">
-                Crafting Digital
+                {t("hero.title")}
               </span>
               <br />
-              <span className="text-foreground">Experiences</span>
+              <span className="text-foreground">{t("hero.titleContinued")}</span>
             </h1>
 
             {/* Subheading */}
             <p className="text-xl text-foreground/70 max-w-2xl mx-auto mb-8 leading-relaxed">
-              I'm a full-stack developer passionate about creating beautiful, high-performance web applications with modern design and cutting-edge technology.
+              {t("hero.description")}
             </p>
 
             {/* CTA Buttons */}
@@ -75,14 +75,14 @@ export default function Index() {
                 to="/projects"
                 className="group px-8 py-4 rounded-xl bg-gradient-to-r from-neon-cyan to-neon-magenta text-background font-semibold flex items-center gap-2 hover:shadow-glow-cyan transition-all duration-300 transform hover:scale-105"
               >
-                View My Work
+                {t("hero.viewWork")}
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Link>
               <Link
                 to="/contact"
                 className="px-8 py-4 rounded-xl border-2 border-neon-cyan/50 text-neon-cyan font-semibold hover:bg-neon-cyan/10 hover:border-neon-cyan transition-all duration-300"
               >
-                Get in Touch
+                {t("hero.getInTouch")}
               </Link>
             </div>
 
