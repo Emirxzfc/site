@@ -174,15 +174,15 @@ export default function Index() {
             </div>
 
             <div className="relative z-10">
-              <h2 className="text-4xl font-bold mb-4">Ready to Start Something Amazing?</h2>
+              <h2 className="text-4xl font-bold mb-4">{t("cta.title")}</h2>
               <p className="text-foreground/70 max-w-2xl mx-auto mb-8 text-lg">
-                Let's collaborate and bring your ideas to life. Whether you have a project in mind or just want to explore possibilities, I'm here to help.
+                {t("cta.description")}
               </p>
               <Link
                 to="/contact"
                 className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-gradient-to-r from-neon-cyan to-neon-magenta text-background font-semibold hover:shadow-glow-cyan transition-all duration-300 transform hover:scale-105"
               >
-                Start Your Project
+                {t("cta.startProject")}
                 <ArrowRight className="w-5 h-5" />
               </Link>
             </div>
