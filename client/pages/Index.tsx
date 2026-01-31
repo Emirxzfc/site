@@ -5,9 +5,9 @@ import Footer from "@/components/Footer";
 
 export default function Index() {
   const skills = [
-    { icon: Code, label: "Full Stack Development", color: "neon-cyan" },
-    { icon: Palette, label: "UI/UX Design", color: "neon-magenta" },
-    { icon: Zap, label: "Performance", color: "neon-purple" },
+    { icon: Code, label: "Full Stack Development", color: "cyan", bgColor: "bg-neon-cyan/10", borderColor: "border-neon-cyan/30" },
+    { icon: Palette, label: "UI/UX Design", color: "magenta", bgColor: "bg-neon-magenta/10", borderColor: "border-neon-magenta/30" },
+    { icon: Zap, label: "Performance", color: "purple", bgColor: "bg-neon-purple/10", borderColor: "border-neon-purple/30" },
   ];
 
   const projects = [
@@ -15,19 +15,19 @@ export default function Index() {
       title: "E-Commerce Platform",
       description: "Modern e-commerce platform with real-time inventory management and seamless checkout experience.",
       tech: ["React", "Node.js", "MongoDB"],
-      color: "from-neon-cyan to-neon-magenta",
+      gradient: "from-neon-cyan to-neon-magenta",
     },
     {
       title: "AI-Powered Analytics",
       description: "Advanced analytics dashboard with machine learning insights and predictive analytics.",
       tech: ["React", "Python", "TensorFlow"],
-      color: "from-neon-magenta to-neon-purple",
+      gradient: "from-neon-magenta to-neon-purple",
     },
     {
       title: "Real-Time Collaboration Tool",
       description: "Live collaboration platform for teams with real-time code editing and video chat.",
       tech: ["React", "WebSocket", "Firebase"],
-      color: "from-neon-purple to-neon-cyan",
+      gradient: "from-neon-purple to-neon-cyan",
     },
   ];
 
@@ -100,25 +100,12 @@ export default function Index() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {skills.map((skill, index) => {
               const Icon = skill.icon;
-              const colorClass =
-                skill.color === "neon-cyan"
-                  ? "text-neon-cyan"
-                  : skill.color === "neon-magenta"
-                    ? "text-neon-magenta"
-                    : "text-neon-purple";
-              const bgColorClass =
-                skill.color === "neon-cyan"
-                  ? "bg-neon-cyan/10"
-                  : skill.color === "neon-magenta"
-                    ? "bg-neon-magenta/10"
-                    : "bg-neon-purple/10";
-
               return (
                 <div
                   key={index}
-                  className={`p-8 rounded-xl border border-${skill.color}/30 ${bgColorClass} hover:border-${skill.color}/60 transition-all duration-300 group cursor-pointer transform hover:scale-105`}
+                  className={`p-8 rounded-xl border ${skill.borderColor} ${skill.bgColor} hover:border-neon-cyan/60 transition-all duration-300 group cursor-pointer transform hover:scale-105`}
                 >
-                  <Icon className={`w-12 h-12 ${colorClass} mb-4`} />
+                  <Icon className={`w-12 h-12 text-neon-${skill.color} mb-4`} />
                   <h3 className="text-xl font-bold mb-2">{skill.label}</h3>
                   <p className="text-foreground/60 text-sm">
                     Expertise in building modern, scalable solutions
@@ -150,7 +137,7 @@ export default function Index() {
                 key={index}
                 className="group rounded-xl border border-foreground/10 bg-card/50 backdrop-blur hover:border-neon-cyan/50 transition-all duration-300 overflow-hidden transform hover:scale-105 hover:shadow-glow-cyan"
               >
-                <div className={`h-40 bg-gradient-to-br ${project.color} opacity-10 group-hover:opacity-20 transition-opacity` />
+                <div className={`h-40 bg-gradient-to-br ${project.gradient} opacity-10 group-hover:opacity-20 transition-opacity`} />
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-2">{project.title}</h3>
                   <p className="text-foreground/70 text-sm mb-4">
