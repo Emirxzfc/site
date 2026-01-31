@@ -5,9 +5,9 @@ import Footer from "@/components/Footer";
 
 export default function Index() {
   const skills = [
-    { icon: Code, label: "Full Stack Development", color: "cyan", bgColor: "bg-neon-cyan/10", borderColor: "border-neon-cyan/30" },
-    { icon: Palette, label: "UI/UX Design", color: "magenta", bgColor: "bg-neon-magenta/10", borderColor: "border-neon-magenta/30" },
-    { icon: Zap, label: "Performance", color: "purple", bgColor: "bg-neon-purple/10", borderColor: "border-neon-purple/30" },
+    { icon: Code, label: "Full Stack Development", iconColor: "text-neon-cyan", bgColor: "bg-neon-cyan/10", borderColor: "border-neon-cyan/30" },
+    { icon: Palette, label: "UI/UX Design", iconColor: "text-neon-magenta", bgColor: "bg-neon-magenta/10", borderColor: "border-neon-magenta/30" },
+    { icon: Zap, label: "Performance", iconColor: "text-neon-purple", bgColor: "bg-neon-purple/10", borderColor: "border-neon-purple/30" },
   ];
 
   const projects = [
