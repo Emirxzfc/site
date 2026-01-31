@@ -15,11 +15,13 @@ export default function Projects() {
         {/* Hero */}
         <section className="px-4 py-20">
           <div className="container mx-auto max-w-4xl">
-            <h1 className="text-5xl font-black mb-6">{t("projectsPage.title")}</h1>
+            <h1 className="text-5xl font-black mb-6">
+              {t("projectsPage.title")}
+            </h1>
             <p className="text-xl text-foreground/70 mb-12">
               {t("projectsPage.description")}
             </p>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[1, 2, 3, 4].map((i) => (
                 <div

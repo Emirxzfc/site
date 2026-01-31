@@ -9,9 +9,27 @@ export default function Index() {
   const { t } = useLanguage();
 
   const skills = [
-    { icon: Code, label: t("skills.fullStack"), iconColor: "text-neon-cyan", bgColor: "bg-neon-cyan/10", borderColor: "border-neon-cyan/30" },
-    { icon: Palette, label: t("skills.uiux"), iconColor: "text-neon-magenta", bgColor: "bg-neon-magenta/10", borderColor: "border-neon-magenta/30" },
-    { icon: Zap, label: t("skills.performance"), iconColor: "text-neon-purple", bgColor: "bg-neon-purple/10", borderColor: "border-neon-purple/30" },
+    {
+      icon: Code,
+      label: t("skills.fullStack"),
+      iconColor: "text-neon-cyan",
+      bgColor: "bg-neon-cyan/10",
+      borderColor: "border-neon-cyan/30",
+    },
+    {
+      icon: Palette,
+      label: t("skills.uiux"),
+      iconColor: "text-neon-magenta",
+      bgColor: "bg-neon-magenta/10",
+      borderColor: "border-neon-magenta/30",
+    },
+    {
+      icon: Zap,
+      label: t("skills.performance"),
+      iconColor: "text-neon-purple",
+      bgColor: "bg-neon-purple/10",
+      borderColor: "border-neon-purple/30",
+    },
   ];
 
   const projects = [
@@ -44,8 +62,14 @@ export default function Index() {
         {/* Animated Background Gradient */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-neon-cyan/5 rounded-full blur-3xl animate-float" />
-          <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-neon-magenta/5 rounded-full blur-3xl animate-float" style={{ animationDelay: "2s" }} />
-          <div className="absolute top-1/2 left-1/2 w-96 h-96 bg-neon-purple/5 rounded-full blur-3xl animate-float" style={{ animationDelay: "4s" }} />
+          <div
+            className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-neon-magenta/5 rounded-full blur-3xl animate-float"
+            style={{ animationDelay: "2s" }}
+          />
+          <div
+            className="absolute top-1/2 left-1/2 w-96 h-96 bg-neon-purple/5 rounded-full blur-3xl animate-float"
+            style={{ animationDelay: "4s" }}
+          />
         </div>
 
         <div className="container mx-auto relative z-10">
@@ -53,7 +77,9 @@ export default function Index() {
             {/* Badge */}
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-neon-cyan/30 bg-neon-cyan/5 mb-6">
               <Sparkles className="w-4 h-4 text-neon-cyan" />
-              <span className="text-sm text-neon-cyan font-medium">{t("hero.welcome")}</span>
+              <span className="text-sm text-neon-cyan font-medium">
+                {t("hero.welcome")}
+              </span>
             </div>
 
             {/* Main Heading */}
@@ -62,7 +88,9 @@ export default function Index() {
                 {t("hero.title")}
               </span>
               <br />
-              <span className="text-foreground">{t("hero.titleContinued")}</span>
+              <span className="text-foreground">
+                {t("hero.titleContinued")}
+              </span>
             </h1>
 
             {/* Subheading */}
@@ -100,7 +128,9 @@ export default function Index() {
       {/* Skills Section */}
       <section className="py-20 px-4 relative">
         <div className="container mx-auto">
-          <h2 className="text-4xl font-bold mb-12 text-center">{t("skills.title")}</h2>
+          <h2 className="text-4xl font-bold mb-12 text-center">
+            {t("skills.title")}
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {skills.map((skill, index) => {
               const Icon = skill.icon;
@@ -141,7 +171,9 @@ export default function Index() {
                 key={index}
                 className="group rounded-xl border border-foreground/10 bg-card/50 backdrop-blur hover:border-neon-cyan/50 transition-all duration-300 overflow-hidden transform hover:scale-105 hover:shadow-glow-cyan"
               >
-                <div className={`h-40 bg-gradient-to-br ${project.gradient} opacity-10 group-hover:opacity-20 transition-opacity`} />
+                <div
+                  className={`h-40 bg-gradient-to-br ${project.gradient} opacity-10 group-hover:opacity-20 transition-opacity`}
+                />
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-2">{project.title}</h3>
                   <p className="text-foreground/70 text-sm mb-4">
@@ -171,7 +203,10 @@ export default function Index() {
             {/* Background Animation */}
             <div className="absolute inset-0 opacity-30 pointer-events-none">
               <div className="absolute top-0 left-1/4 w-64 h-64 bg-neon-cyan/20 rounded-full blur-3xl animate-float" />
-              <div className="absolute bottom-0 right-1/4 w-64 h-64 bg-neon-magenta/20 rounded-full blur-3xl animate-float" style={{ animationDelay: "3s" }} />
+              <div
+                className="absolute bottom-0 right-1/4 w-64 h-64 bg-neon-magenta/20 rounded-full blur-3xl animate-float"
+                style={{ animationDelay: "3s" }}
+              />
             </div>
 
             <div className="relative z-10">

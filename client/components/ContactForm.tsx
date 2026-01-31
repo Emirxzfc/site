@@ -16,7 +16,7 @@ export default function ContactForm() {
   }>({ type: "idle", message: "" });
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
@@ -156,7 +156,9 @@ export default function ContactForm() {
         disabled={status.type === "loading"}
         className="w-full px-8 py-4 rounded-lg bg-gradient-to-r from-neon-cyan to-neon-magenta text-background font-semibold hover:shadow-glow-cyan transition-all duration-300 transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
       >
-        {status.type === "loading" ? t("contact.form.sending") : t("contact.form.send")}
+        {status.type === "loading"
+          ? t("contact.form.sending")
+          : t("contact.form.send")}
       </button>
     </form>
   );

@@ -89,18 +89,22 @@ export default {
         },
         glow: {
           "0%, 100%": {
-            textShadow: "0 0 10px hsl(var(--neon-cyan)), 0 0 20px hsl(var(--neon-cyan)), 0 0 30px hsl(var(--neon-cyan))",
+            textShadow:
+              "0 0 10px hsl(var(--neon-cyan)), 0 0 20px hsl(var(--neon-cyan)), 0 0 30px hsl(var(--neon-cyan))",
           },
           "50%": {
-            textShadow: "0 0 20px hsl(var(--neon-cyan)), 0 0 30px hsl(var(--neon-cyan)), 0 0 40px hsl(var(--neon-cyan))",
+            textShadow:
+              "0 0 20px hsl(var(--neon-cyan)), 0 0 30px hsl(var(--neon-cyan)), 0 0 40px hsl(var(--neon-cyan))",
           },
         },
         "glow-magenta": {
           "0%, 100%": {
-            textShadow: "0 0 10px hsl(var(--neon-magenta)), 0 0 20px hsl(var(--neon-magenta))",
+            textShadow:
+              "0 0 10px hsl(var(--neon-magenta)), 0 0 20px hsl(var(--neon-magenta))",
           },
           "50%": {
-            textShadow: "0 0 20px hsl(var(--neon-magenta)), 0 0 30px hsl(var(--neon-magenta))",
+            textShadow:
+              "0 0 20px hsl(var(--neon-magenta)), 0 0 30px hsl(var(--neon-magenta))",
           },
         },
         float: {
@@ -116,10 +120,14 @@ export default {
         float: "float 6s ease-in-out infinite",
       },
       boxShadow: {
-        "glow-cyan": "0 0 20px hsl(var(--neon-cyan)), 0 0 40px hsl(var(--neon-cyan))",
-        "glow-magenta": "0 0 20px hsl(var(--neon-magenta)), 0 0 40px hsl(var(--neon-magenta))",
-        "glow-purple": "0 0 20px hsl(var(--neon-purple)), 0 0 40px hsl(var(--neon-purple))",
-        "glow-lime": "0 0 20px hsl(var(--neon-lime)), 0 0 40px hsl(var(--neon-lime))",
+        "glow-cyan":
+          "0 0 20px hsl(var(--neon-cyan)), 0 0 40px hsl(var(--neon-cyan))",
+        "glow-magenta":
+          "0 0 20px hsl(var(--neon-magenta)), 0 0 40px hsl(var(--neon-magenta))",
+        "glow-purple":
+          "0 0 20px hsl(var(--neon-purple)), 0 0 40px hsl(var(--neon-purple))",
+        "glow-lime":
+          "0 0 20px hsl(var(--neon-lime)), 0 0 40px hsl(var(--neon-lime))",
       },
     },
   },

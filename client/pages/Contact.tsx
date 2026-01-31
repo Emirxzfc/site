@@ -15,7 +15,9 @@ export default function Contact() {
         {/* Hero */}
         <section className="px-4 py-20">
           <div className="container mx-auto max-w-4xl">
-            <h1 className="text-5xl font-black mb-6 text-center">{t("contact.title")}</h1>
+            <h1 className="text-5xl font-black mb-6 text-center">
+              {t("contact.title")}
+            </h1>
             <p className="text-xl text-foreground/70 mb-12 text-center">
               {t("contact.description")}
             </p>
@@ -37,7 +39,9 @@ export default function Contact() {
                 >
                   <Mail className="w-8 h-8 text-neon-cyan mx-auto mb-4" />
                   <h3 className="font-bold mb-2">{t("contact.email")}</h3>
-                  <p className="text-foreground/60 text-sm">hello@example.com</p>
+                  <p className="text-foreground/60 text-sm">
+                    hello@example.com
+                  </p>
                 </a>
 
                 <a
@@ -48,7 +52,9 @@ export default function Contact() {
                 >
                   <Linkedin className="w-8 h-8 text-neon-magenta mx-auto mb-4" />
                   <h3 className="font-bold mb-2">{t("contact.linkedin")}</h3>
-                  <p className="text-foreground/60 text-sm">linkedin.com/in/yourprofile</p>
+                  <p className="text-foreground/60 text-sm">
+                    linkedin.com/in/yourprofile
+                  </p>
                 </a>
               </div>
 

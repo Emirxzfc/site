@@ -17,7 +17,9 @@ export default function LanguagesList() {
   return (
     <section className="py-20 px-4 relative">
       <div className="container mx-auto">
-        <h2 className="text-4xl font-bold mb-12 text-center">{t("projects.title")}</h2>
+        <h2 className="text-4xl font-bold mb-12 text-center">
+          {t("projects.title")}
+        </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {languages.map((lang, index) => (
@@ -30,15 +32,19 @@ export default function LanguagesList() {
                 <div className="text-5xl mb-4 group-hover:scale-125 transition-transform duration-300">
                   {lang.icon}
                 </div>
-                <h3 className="text-2xl font-bold text-center bg-gradient-to-r bg-clip-text text-transparent"
-                    style={{
-                      backgroundImage: `linear-gradient(to right, hsl(var(--neon-cyan)), hsl(var(--neon-magenta)))`
-                    }}>
+                <h3
+                  className="text-2xl font-bold text-center bg-gradient-to-r bg-clip-text text-transparent"
+                  style={{
+                    backgroundImage: `linear-gradient(to right, hsl(var(--neon-cyan)), hsl(var(--neon-magenta)))`,
+                  }}
+                >
                   {lang.name}
                 </h3>
 
                 {/* Glow effect on hover */}
-                <div className={`absolute inset-0 bg-gradient-to-br ${lang.color} opacity-0 group-hover:opacity-10 rounded-lg transition-opacity duration-300`} />
+                <div
+                  className={`absolute inset-0 bg-gradient-to-br ${lang.color} opacity-0 group-hover:opacity-10 rounded-lg transition-opacity duration-300`}
+                />
               </div>
             </div>
           ))}

@@ -66,7 +66,8 @@ export const translations = {
     about: {
       title: "About Me",
       content: "About page content",
-      description: "This page will showcase your background, experience, and journey",
+      description:
+        "This page will showcase your background, experience, and journey",
       backToHome: "Back to Home",
     },
     projectsPage: {
@@ -100,7 +101,8 @@ export const translations = {
     notFound: {
       title: "404",
       message: "Oops! Page not found",
-      description: "The page you're looking for doesn't exist. Let's get you back on track.",
+      description:
+        "The page you're looking for doesn't exist. Let's get you back on track.",
       returnHome: "Return to Home",
     },
   },
@@ -171,18 +173,21 @@ export const translations = {
     about: {
       title: "Hakkımda",
       content: "Hakkımda sayfa içeriği",
-      description: "Bu sayfa arka planınızı, deneyiminizi ve yolculuğunuzu gösterecek",
+      description:
+        "Bu sayfa arka planınızı, deneyiminizi ve yolculuğunuzu gösterecek",
       backToHome: "Ana Sayfaya Dön",
     },
     projectsPage: {
       title: "Projeler",
-      description: "Son çalışmalarımı ve yan projelerimi görmek için buraya bakın",
+      description:
+        "Son çalışmalarımı ve yan projelerimi görmek için buraya bakın",
       comingSoon: "Çok yakında",
       backToHome: "Ana Sayfaya Dön",
     },
     contact: {
       title: "İletişime Geç",
-      description: "Projeniz hakkında ve nasıl yardımcı olabileceğimi duymak isterim",
+      description:
+        "Projeniz hakkında ve nasıl yardımcı olabileceğimi duymak isterim",
       email: "E-posta",
       linkedin: "LinkedIn",
       connectSocial: "Sosyal medyada benimle bağlantı kurun",
