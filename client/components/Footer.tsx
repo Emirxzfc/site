@@ -147,20 +147,20 @@ export default function Footer() {
 
         <div className="border-t border-neon-cyan/10 pt-8 flex flex-col md:flex-row items-center justify-between">
           <p className="text-foreground/60 text-sm">
-            © {currentYear} Developer Portfolio. All rights reserved.
+            {t("footer.copyright").replace("{year}", currentYear.toString())}
           </p>
           <div className="flex gap-6 mt-4 md:mt-0">
             <a
               href="#"
               className="text-foreground/60 hover:text-neon-cyan transition-colors text-sm"
             >
-              Privacy Policy
+              {t("footer.privacyPolicy")}
             </a>
             <a
               href="#"
               className="text-foreground/60 hover:text-neon-cyan transition-colors text-sm"
             >
-              Terms of Service
+              {t("footer.termsOfService")}
             </a>
           </div>
         </div>
