@@ -24,17 +24,17 @@ const NotFound = () => {
       <main className="min-h-screen flex items-center justify-center px-4 pt-20">
         <div className="text-center max-w-2xl">
           <h1 className="text-7xl font-black mb-4 bg-gradient-to-r from-neon-cyan to-neon-magenta bg-clip-text text-transparent">
-            404
+            {t("notFound.title")}
           </h1>
-          <p className="text-2xl font-bold mb-4">Oops! Page not found</p>
+          <p className="text-2xl font-bold mb-4">{t("notFound.message")}</p>
           <p className="text-foreground/70 mb-8 text-lg">
-            The page you're looking for doesn't exist. Let's get you back on track.
+            {t("notFound.description")}
           </p>
           <Link
             to="/"
             className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-gradient-to-r from-neon-cyan to-neon-magenta text-background font-semibold hover:shadow-glow-cyan transition-all transform hover:scale-105"
           >
-            Return to Home
+            {t("notFound.returnHome")}
             <ArrowRight className="w-5 h-5" />
           </Link>
         </div>
