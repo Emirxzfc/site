@@ -61,7 +61,7 @@
   }
 
   /* Light Mode */
-  :not(.dark) {
+  html:not(.dark) {
     --background: 210 30% 97%;
     --foreground: 240 10% 10%;
 
