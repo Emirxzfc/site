@@ -65,14 +65,32 @@ export default function AnimatedBackground() {
       </div>
 
       {/* Extra ambient lights */}
-      <div className="absolute top-0 right-1/4 w-72 h-72 bg-neon-pink/12 rounded-full blur-3xl animate-float" style={{ animationDelay: "1s" }} />
-      <div className="absolute bottom-0 left-1/4 w-80 h-80 bg-neon-purple/10 rounded-full blur-3xl animate-float-slow" style={{ animationDelay: "3s" }} />
-      <div className="absolute top-1/2 right-10 w-64 h-64 bg-neon-cyan/8 rounded-full blur-2xl animate-pulse-intense" style={{ animationDelay: "2s" }} />
+      <div
+        className="absolute top-0 right-1/4 w-72 h-72 bg-neon-pink/12 rounded-full blur-3xl animate-float"
+        style={{ animationDelay: "1s" }}
+      />
+      <div
+        className="absolute bottom-0 left-1/4 w-80 h-80 bg-neon-purple/10 rounded-full blur-3xl animate-float-slow"
+        style={{ animationDelay: "3s" }}
+      />
+      <div
+        className="absolute top-1/2 right-10 w-64 h-64 bg-neon-cyan/8 rounded-full blur-2xl animate-pulse-intense"
+        style={{ animationDelay: "2s" }}
+      />
 
       {/* Corner accents */}
-      <div className="absolute top-0 left-0 w-80 h-80 bg-neon-magenta/10 rounded-full blur-3xl animate-float-slow" style={{ animationDelay: "2.5s" }} />
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-neon-cyan/8 rounded-full blur-3xl animate-float" style={{ animationDelay: "3.5s" }} />
-      <div className="absolute top-1/3 right-1/3 w-72 h-72 bg-neon-purple/15 rounded-full blur-2xl animate-pulse-intense" style={{ animationDelay: "0.8s" }} />
+      <div
+        className="absolute top-0 left-0 w-80 h-80 bg-neon-magenta/10 rounded-full blur-3xl animate-float-slow"
+        style={{ animationDelay: "2.5s" }}
+      />
+      <div
+        className="absolute bottom-0 right-0 w-96 h-96 bg-neon-cyan/8 rounded-full blur-3xl animate-float"
+        style={{ animationDelay: "3.5s" }}
+      />
+      <div
+        className="absolute top-1/3 right-1/3 w-72 h-72 bg-neon-purple/15 rounded-full blur-2xl animate-pulse-intense"
+        style={{ animationDelay: "0.8s" }}
+      />
     </div>
   );
 }

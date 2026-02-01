@@ -63,7 +63,8 @@ export default function AdminPanel() {
           <div>
             <h1 className="text-3xl font-bold">Admin Panel</h1>
             <p className="text-foreground/60 text-sm mt-1">
-              {messages.length} message{messages.length !== 1 ? "s" : ""} received
+              {messages.length} message{messages.length !== 1 ? "s" : ""}{" "}
+              received
             </p>
           </div>
           <button
@@ -113,8 +114,12 @@ export default function AdminPanel() {
                           : "border-transparent"
                       }`}
                     >
-                      <p className="font-semibold text-sm truncate">{msg.name}</p>
-                      <p className="text-xs text-foreground/60 truncate">{msg.email}</p>
+                      <p className="font-semibold text-sm truncate">
+                        {msg.name}
+                      </p>
+                      <p className="text-xs text-foreground/60 truncate">
+                        {msg.email}
+                      </p>
                       <p className="text-xs text-foreground/50 mt-1 truncate">
                         {msg.subject}
                       </p>
@@ -135,7 +140,9 @@ export default function AdminPanel() {
                 <div className="mb-6 pb-6 border-b border-neon-cyan/30">
                   <div className="flex items-start justify-between mb-4">
                     <div>
-                      <h3 className="text-2xl font-bold">{selectedMessage.name}</h3>
+                      <h3 className="text-2xl font-bold">
+                        {selectedMessage.name}
+                      </h3>
                       <div className="flex items-center gap-2 text-foreground/60 text-sm mt-2">
                         <Mail className="w-4 h-4" />
                         {selectedMessage.email}
@@ -154,12 +161,18 @@ export default function AdminPanel() {
                 </div>
 
                 <div className="mb-6">
-                  <h4 className="text-sm font-semibold text-neon-cyan mb-2">Subject</h4>
-                  <p className="text-lg font-medium">{selectedMessage.subject}</p>
+                  <h4 className="text-sm font-semibold text-neon-cyan mb-2">
+                    Subject
+                  </h4>
+                  <p className="text-lg font-medium">
+                    {selectedMessage.subject}
+                  </p>
                 </div>
 
                 <div>
-                  <h4 className="text-sm font-semibold text-neon-cyan mb-2">Message</h4>
+                  <h4 className="text-sm font-semibold text-neon-cyan mb-2">
+                    Message
+                  </h4>
                   <div className="p-4 rounded-lg bg-background/50 border border-foreground/10">
                     <p className="text-foreground/80 whitespace-pre-wrap">
                       {selectedMessage.message}
@@ -170,7 +183,11 @@ export default function AdminPanel() {
                 {/* Reply CTA */}
                 <div className="mt-8 p-4 rounded-lg bg-neon-cyan/5 border border-neon-cyan/30">
                   <p className="text-sm text-foreground/70">
-                    💡 To reply, contact <span className="text-neon-cyan font-mono">{selectedMessage.email}</span> directly
+                    💡 To reply, contact{" "}
+                    <span className="text-neon-cyan font-mono">
+                      {selectedMessage.email}
+                    </span>{" "}
+                    directly
                   </p>
                 </div>
               </div>

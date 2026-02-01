@@ -79,9 +79,7 @@ export default function About() {
         <section className="px-4 py-20">
           <div className="container mx-auto max-w-3xl">
             <div className="p-12 rounded-xl border border-neon-cyan/30 bg-gradient-to-r from-neon-cyan/10 to-neon-magenta/10 text-center">
-              <h2 className="text-3xl font-bold mb-6">
-                {t("about.cta")}
-              </h2>
+              <h2 className="text-3xl font-bold mb-6">{t("about.cta")}</h2>
               <a
                 href="/contact"
                 className="inline-flex items-center gap-2 px-8 py-4 rounded-lg bg-gradient-to-r from-neon-cyan to-neon-magenta text-background font-semibold hover:shadow-glow-cyan transition-all transform hover:scale-105"

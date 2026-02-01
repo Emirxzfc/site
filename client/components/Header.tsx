@@ -15,7 +15,7 @@ export default function Header() {
             <Code2 className="w-6 h-6 text-neon-cyan" />
           </div>
           <span className="text-xl font-bold">
-            <span className="text-neon-cyan">{"{" }</span>
+            <span className="text-neon-cyan">{"{"}</span>
             <span className="bg-gradient-to-r from-neon-cyan to-neon-magenta bg-clip-text text-transparent">
               EmirDev
             </span>

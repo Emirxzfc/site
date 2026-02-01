@@ -59,7 +59,6 @@ export default function Index() {
 
       {/* Hero Section */}
       <section className="min-h-screen flex items-center justify-center px-4 pt-20 relative overflow-hidden">
-
         <div className="container mx-auto relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             {/* Badge */}

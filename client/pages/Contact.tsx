@@ -38,7 +38,9 @@ export default function Contact() {
                   className="rounded-xl border border-neon-cyan/30 bg-neon-cyan/5 p-8 hover:border-neon-cyan/60 transition-all transform hover:scale-105"
                 >
                   <Mail className="w-8 h-8 text-neon-cyan mx-auto mb-4" />
-                  <h3 className="font-bold mb-2 text-center">{t("contact.email")}</h3>
+                  <h3 className="font-bold mb-2 text-center">
+                    {t("contact.email")}
+                  </h3>
                   <p className="text-foreground/60 text-sm text-center">
                     hello@example.com
                   </p>

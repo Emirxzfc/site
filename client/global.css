@@ -190,7 +190,8 @@
 }
 
 @keyframes float-slow {
-  0%, 100% {
+  0%,
+  100% {
     transform: translate(0, 0) rotate(0deg);
   }
   25% {
@@ -205,7 +206,8 @@
 }
 
 @keyframes float-reverse {
-  0%, 100% {
+  0%,
+  100% {
     transform: translate(0, 0) rotate(0deg);
   }
   25% {
@@ -220,7 +222,8 @@
 }
 
 @keyframes pulse-glow {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 0.4;
     filter: blur(40px);
   }
@@ -240,14 +243,27 @@
 }
 
 @keyframes shift-colors {
-  0%, 100% {
-    background: radial-gradient(circle, hsl(180, 100%, 50%) 0%, transparent 70%);
+  0%,
+  100% {
+    background: radial-gradient(
+      circle,
+      hsl(180, 100%, 50%) 0%,
+      transparent 70%
+    );
   }
   33% {
-    background: radial-gradient(circle, hsl(300, 100%, 50%) 0%, transparent 70%);
+    background: radial-gradient(
+      circle,
+      hsl(300, 100%, 50%) 0%,
+      transparent 70%
+    );
   }
   66% {
-    background: radial-gradient(circle, hsl(280, 100%, 50%) 0%, transparent 70%);
+    background: radial-gradient(
+      circle,
+      hsl(280, 100%, 50%) 0%,
+      transparent 70%
+    );
   }
 }
 
@@ -270,7 +286,8 @@
 }
 
 @keyframes pulse-intense {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 0.3;
     filter: blur(30px);
   }
@@ -281,16 +298,22 @@
 }
 
 @keyframes glow-pulse {
-  0%, 100% {
-    box-shadow: 0 0 20px currentColor, 0 0 40px currentColor;
+  0%,
+  100% {
+    box-shadow:
+      0 0 20px currentColor,
+      0 0 40px currentColor;
   }
   50% {
-    box-shadow: 0 0 40px currentColor, 0 0 80px currentColor;
+    box-shadow:
+      0 0 40px currentColor,
+      0 0 80px currentColor;
   }
 }
 
 @keyframes flicker {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 0.8;
   }
   50% {

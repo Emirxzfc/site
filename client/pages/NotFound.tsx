@@ -25,14 +25,20 @@ const NotFound = () => {
         {/* Animated background elements */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute top-20 right-20 w-96 h-96 bg-neon-cyan/20 rounded-full blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-20 left-20 w-96 h-96 bg-neon-magenta/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "1s" }}></div>
+          <div
+            className="absolute bottom-20 left-20 w-96 h-96 bg-neon-magenta/20 rounded-full blur-3xl animate-pulse"
+            style={{ animationDelay: "1s" }}
+          ></div>
         </div>
 
         <div className="text-center max-w-2xl relative z-10">
           {/* Error code with glitch effect */}
           <div className="mb-8">
             <div className="inline-block">
-              <Zap className="w-16 h-16 text-neon-cyan mx-auto mb-4 animate-bounce" style={{ animationDuration: "2s" }} />
+              <Zap
+                className="w-16 h-16 text-neon-cyan mx-auto mb-4 animate-bounce"
+                style={{ animationDuration: "2s" }}
+              />
             </div>
             <h1 className="text-9xl font-black bg-gradient-to-r from-neon-cyan via-neon-magenta to-neon-purple bg-clip-text text-transparent mb-4 tracking-tighter">
               404

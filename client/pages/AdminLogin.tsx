@@ -52,7 +52,10 @@ export default function AdminLogin() {
 
           {/* Username */}
           <div>
-            <label htmlFor="username" className="block text-sm font-medium mb-2">
+            <label
+              htmlFor="username"
+              className="block text-sm font-medium mb-2"
+            >
               Username
             </label>
             <input
@@ -68,7 +71,10 @@ export default function AdminLogin() {
 
           {/* Password */}
           <div>
-            <label htmlFor="password" className="block text-sm font-medium mb-2">
+            <label
+              htmlFor="password"
+              className="block text-sm font-medium mb-2"
+            >
               Password
             </label>
             <input
@@ -95,8 +101,12 @@ export default function AdminLogin() {
         {/* Demo Credentials */}
         <div className="mt-8 p-4 rounded-lg border border-neon-cyan/30 bg-neon-cyan/5 text-center text-sm text-foreground/60">
           <p className="mb-2 font-medium">Demo Credentials:</p>
-          <p>Username: <span className="text-neon-cyan font-mono">admin</span></p>
-          <p>Password: <span className="text-neon-cyan font-mono">admin123</span></p>
+          <p>
+            Username: <span className="text-neon-cyan font-mono">admin</span>
+          </p>
+          <p>
+            Password: <span className="text-neon-cyan font-mono">admin123</span>
+          </p>
         </div>
       </div>
     </div>
