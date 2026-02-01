@@ -14,8 +14,12 @@ export default function Header() {
           <div className="p-2 rounded-lg bg-neon-cyan/10 group-hover:bg-neon-cyan/20 transition-colors">
             <Code2 className="w-6 h-6 text-neon-cyan" />
           </div>
-          <span className="text-xl font-bold bg-gradient-to-r from-neon-cyan to-neon-magenta bg-clip-text text-transparent">
-            Developer
+          <span className="text-xl font-bold">
+            <span className="text-neon-cyan">{"{" }</span>
+            <span className="bg-gradient-to-r from-neon-cyan to-neon-magenta bg-clip-text text-transparent">
+              EmirDev
+            </span>
+            <span className="text-neon-cyan">{" }"}</span>
           </span>
         </Link>
 
