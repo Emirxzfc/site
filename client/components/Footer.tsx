@@ -1,4 +1,4 @@
-import { Github, Linkedin, Twitter, Mail } from "lucide-react";
+import { Mail, MessageCircle } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useLanguage } from "@/contexts/LanguageContext";
 
@@ -9,7 +9,7 @@ export default function Footer() {
   return (
     <footer className="border-t border-neon-cyan/20 bg-background/50 backdrop-blur">
       <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
           <div>
             <h3 className="text-sm font-semibold text-neon-cyan mb-4">
               {t("footer.quickLinks")}
@@ -43,103 +43,23 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-sm font-semibold text-neon-magenta mb-4">
-              {t("footer.services")}
-            </h3>
-            <ul className="space-y-2">
-              <li>
-                <a
-                  href="#"
-                  className="text-foreground/60 hover:text-neon-magenta transition-colors text-sm"
-                >
-                  {t("footer.webDev")}
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-foreground/60 hover:text-neon-magenta transition-colors text-sm"
-                >
-                  {t("footer.uidesign")}
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-foreground/60 hover:text-neon-magenta transition-colors text-sm"
-                >
-                  {t("footer.consulting")}
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="text-sm font-semibold text-neon-purple mb-4">
-              {t("footer.resources")}
-            </h3>
-            <ul className="space-y-2">
-              <li>
-                <a
-                  href="#"
-                  className="text-foreground/60 hover:text-neon-purple transition-colors text-sm"
-                >
-                  {t("footer.blog")}
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-foreground/60 hover:text-neon-purple transition-colors text-sm"
-                >
-                  {t("footer.documentation")}
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-foreground/60 hover:text-neon-purple transition-colors text-sm"
-                >
-                  {t("footer.resume")}
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div>
             <h3 className="text-sm font-semibold text-neon-cyan mb-4">
               {t("footer.connect")}
             </h3>
             <div className="flex gap-3">
               <a
-                href="https://github.com"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="mailto:hello@example.com"
                 className="p-2 rounded-lg bg-neon-cyan/10 hover:bg-neon-cyan/20 text-neon-cyan transition-colors"
               >
-                <Github className="w-4 h-4" />
+                <Mail className="w-4 h-4" />
               </a>
               <a
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2 rounded-lg bg-neon-magenta/10 hover:bg-neon-magenta/20 text-neon-magenta transition-colors"
-              >
-                <Linkedin className="w-4 h-4" />
-              </a>
-              <a
-                href="https://twitter.com"
+                href="https://discord.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 rounded-lg bg-neon-purple/10 hover:bg-neon-purple/20 text-neon-purple transition-colors"
               >
-                <Twitter className="w-4 h-4" />
-              </a>
-              <a
-                href="mailto:hello@example.com"
-                className="p-2 rounded-lg bg-neon-pink/10 hover:bg-neon-pink/20 text-neon-pink transition-colors"
-              >
-                <Mail className="w-4 h-4" />
+                <MessageCircle className="w-4 h-4" />
               </a>
             </div>
           </div>
