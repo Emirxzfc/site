@@ -61,6 +61,7 @@ export default function Index() {
       <section className="min-h-screen flex items-center justify-center px-4 pt-20 relative overflow-hidden">
         {/* Animated Background Gradient */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          {/* Main floating orbs */}
           <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-neon-cyan/5 rounded-full blur-3xl animate-float" />
           <div
             className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-neon-magenta/5 rounded-full blur-3xl animate-float"
@@ -69,6 +70,24 @@ export default function Index() {
           <div
             className="absolute top-1/2 left-1/2 w-96 h-96 bg-neon-purple/5 rounded-full blur-3xl animate-float"
             style={{ animationDelay: "4s" }}
+          />
+
+          {/* Additional dynamic elements */}
+          <div className="absolute top-10 right-10 w-72 h-72 bg-neon-cyan/10 rounded-full blur-3xl animate-float-slow" />
+          <div
+            className="absolute bottom-20 right-1/3 w-64 h-64 bg-neon-pink/8 rounded-full blur-3xl animate-float-reverse"
+            style={{ animationDelay: "1s" }}
+          />
+          <div
+            className="absolute top-1/3 left-10 w-80 h-80 bg-neon-magenta/8 rounded-full blur-3xl animate-pulse-glow"
+            style={{ animationDelay: "0.5s" }}
+          />
+
+          {/* Accent particles */}
+          <div className="absolute top-1/2 right-1/4 w-48 h-48 bg-neon-purple/12 rounded-full blur-2xl animate-swirl" />
+          <div
+            className="absolute bottom-1/3 left-1/3 w-56 h-56 bg-neon-cyan/12 rounded-full blur-2xl animate-swirl"
+            style={{ animationDelay: "7.5s" }}
           />
         </div>
 
