@@ -151,50 +151,8 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Featured Projects Section */}
-      <section className="py-20 px-4">
-        <div className="container mx-auto">
-          <div className="flex items-center justify-between mb-12">
-            <h2 className="text-4xl font-bold">{t("projects.title")}</h2>
-            <Link
-              to="/projects"
-              className="text-neon-cyan hover:text-neon-magenta transition-colors flex items-center gap-2 font-semibold"
-            >
-              {t("projects.viewAll")}
-              <ArrowRight className="w-5 h-5" />
-            </Link>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {projects.map((project, index) => (
-              <div
-                key={index}
-                className="group rounded-xl border border-foreground/10 bg-card/50 backdrop-blur hover:border-neon-cyan/50 transition-all duration-300 overflow-hidden transform hover:scale-105 hover:shadow-glow-cyan"
-              >
-                <div
-                  className={`h-40 bg-gradient-to-br ${project.gradient} opacity-10 group-hover:opacity-20 transition-opacity`}
-                />
-                <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-                  <p className="text-foreground/70 text-sm mb-4">
-                    {project.description}
-                  </p>
-                  <div className="flex flex-wrap gap-2">
-                    {project.tech.map((tech, i) => (
-                      <span
-                        key={i}
-                        className="text-xs px-3 py-1 rounded-full bg-neon-cyan/10 text-neon-cyan border border-neon-cyan/30"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* Languages List Section */}
+      <LanguagesList />
 
       {/* CTA Section */}
       <section className="py-20 px-4 relative">
