@@ -65,9 +65,17 @@ export const translations = {
     },
     about: {
       title: "About Me",
-      content: "About page content",
-      description:
-        "This page will showcase your background, experience, and journey",
+      bio: "I'm a full-stack developer with a passion for building beautiful, high-performance web applications. With expertise in modern technologies and a deep understanding of user experience, I create digital solutions that make a real impact.",
+      journey: "My Journey",
+      journeyText:
+        "I started my development journey with a curiosity about how things work on the web. Over the years, I've evolved from working on small projects to architecting complex systems for various industries. Each project has taught me something new, and I'm constantly pushing myself to learn and grow.",
+      expertise: "Expertise & Skills",
+      expertiseText:
+        "With proficiency in C++, C#, Python, Lua, HTML, CSS, JavaScript, and PHP, I bring a diverse skill set to every project. Whether it's frontend design, backend development, or database optimization, I approach each challenge with precision and creativity.",
+      values: "My Approach",
+      valuesText:
+        "I believe in writing clean, maintainable code. I focus on performance, scalability, and user experience in everything I build. Collaboration and clear communication are core to my process, ensuring that projects exceed expectations.",
+      cta: "Let's Create Something Amazing Together",
       backToHome: "Back to Home",
     },
     projectsPage: {
@@ -172,9 +180,17 @@ export const translations = {
     },
     about: {
       title: "Hakkımda",
-      content: "Hakkımda sayfa içeriği",
-      description:
-        "Bu sayfa arka planınızı, deneyiminizi ve yolculuğunuzu gösterecek",
+      bio: "Güzel ve yüksek performanslı web uygulamaları oluşturmaya tutkulu bir full-stack geliştirici. Modern teknolojilerde uzmanlık ve kullanıcı deneyiminin derinlemesine anlaşılması ile dijital çözümler oluştururum.",
+      journey: "Mijn Yolculuğum",
+      journeyText:
+        "Web üzerinde işlerin nasıl çalıştığını anlamak isteğiyle geliştirme yolculuğuma başladım. Yıllar içinde küçük projelerden karmaşık sistemlerin mimarisine kadar gelişim gösterdim. Her proje bana yeni şeyler öğretti ve sürekli öğrenmeye devam ediyorum.",
+      expertise: "Uzmanlık & Beceriler",
+      expertiseText:
+        "C++, C#, Python, Lua, HTML, CSS, JavaScript ve PHP'de yetkinlik ile her projeye çeşitli bir beceri seti getiririm. Frontend tasarımı, backend geliştirme veya veritabanı optimizasyonu ne olursa olsun, her zorluk karşısında kesinlik ve yaratıcılık ile yaklaşırım.",
+      values: "Benim Yaklaşımım",
+      valuesText:
+        "Temiz ve sürdürülebilir kod yazılmasına inanıyorum. Oluşturduğum her şeyde performans, ölçeklenebilirlik ve kullanıcı deneyimine odaklanırım. İşbirliği ve net iletişim sürecimin temelini oluşturur ve projelerin beklentileri aşmasını sağlar.",
+      cta: "Birlikte Harika Bir Şey Yaratalım",
       backToHome: "Ana Sayfaya Dön",
     },
     projectsPage: {
