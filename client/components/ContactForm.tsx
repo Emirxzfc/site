@@ -30,6 +30,19 @@ export default function ContactForm() {
     setStatus({ type: "loading", message: "" });
 
     try {
+      // Save to localStorage for admin panel
+      const newMessage = {
+        id: Date.now().toString(),
+        ...formData,
+        timestamp: new Date().toISOString(),
+      };
+
+      const existing = localStorage.getItem("contactMessages");
+      const messages = existing ? JSON.parse(existing) : [];
+      messages.push(newMessage);
+      localStorage.setItem("contactMessages", JSON.stringify(messages));
+
+      // Also send to server
       const response = await fetch("/api/contact", {
         method: "POST",
         headers: {
