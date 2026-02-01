@@ -188,3 +188,87 @@
     white-space: pre;
   }
 }
+
+@keyframes float-slow {
+  0%, 100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(30px, -30px) rotate(90deg);
+  }
+  50% {
+    transform: translate(0, -60px) rotate(180deg);
+  }
+  75% {
+    transform: translate(-30px, -30px) rotate(270deg);
+  }
+}
+
+@keyframes float-reverse {
+  0%, 100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(-40px, 40px) rotate(-90deg);
+  }
+  50% {
+    transform: translate(0, 80px) rotate(-180deg);
+  }
+  75% {
+    transform: translate(40px, 40px) rotate(-270deg);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    opacity: 0.4;
+    filter: blur(40px);
+  }
+  50% {
+    opacity: 0.8;
+    filter: blur(60px);
+  }
+}
+
+@keyframes swirl {
+  0% {
+    transform: rotate(0deg) translateX(100px);
+  }
+  100% {
+    transform: rotate(360deg) translateX(100px);
+  }
+}
+
+@keyframes shift-colors {
+  0%, 100% {
+    background: radial-gradient(circle, hsl(180, 100%, 50%) 0%, transparent 70%);
+  }
+  33% {
+    background: radial-gradient(circle, hsl(300, 100%, 50%) 0%, transparent 70%);
+  }
+  66% {
+    background: radial-gradient(circle, hsl(280, 100%, 50%) 0%, transparent 70%);
+  }
+}
+
+@layer utilities {
+  .animate-float-slow {
+    animation: float-slow 20s ease-in-out infinite;
+  }
+
+  .animate-float-reverse {
+    animation: float-reverse 25s ease-in-out infinite;
+  }
+
+  .animate-pulse-glow {
+    animation: pulse-glow 4s ease-in-out infinite;
+  }
+
+  .animate-swirl {
+    animation: swirl 15s linear infinite;
+  }
+
+  .animate-shift-colors {
+    animation: shift-colors 6s ease-in-out infinite;
+  }
+}
