@@ -8,6 +8,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import { LanguageProvider } from "./contexts/LanguageContext";
 import { AdminProvider } from "./contexts/AdminContext";
+import AnimatedBackground from "./components/AnimatedBackground";
 import Index from "./pages/Index";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
@@ -25,6 +26,7 @@ export default function App() {
         <AdminProvider>
           <QueryClientProvider client={queryClient}>
             <TooltipProvider>
+              <AnimatedBackground />
               <Toaster />
               <Sonner />
               <BrowserRouter>
